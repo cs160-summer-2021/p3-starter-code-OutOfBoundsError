@@ -5,12 +5,68 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<title>P3 Coloring</title>
-    <link rel="stylesheet" href="../../static/coloring/main.css"/>
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
-
+    <link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="../../static/coloring/main.css"/>
 </head>
 <body>
-    Home page
+    <div class="outer-wrapper">
+        <div id="welcome-header"> 
+            <img src="https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png" height="50"/>
+            Welcome back, John!
+        </div>
+
+        <ul id="main-menu">
+            <li class="main-menu-btn"><a class="main-menu-btn" href="./designs">Select from Designs</a></li>
+            <li class="main-menu-btn"><a class="main-menu-btn" href="./mydesigns">My Designs</a></li>
+            <li class="main-menu-btn"><a class="main-menu-btn" href="./settings">Settings</a></li>
+        </ul>
+        <br/>
+        <h2 id="section-header">Recent Designs</h2>
+        <br/>
+        <div id="recent-designs-section">
+            
+            <div id="recent-design-card" class="card" style="width: 18rem;">
+                <img src="https://coloringhome.com/coloring/8cG/oKr/8cGoKr9Xi.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                  <h5 class="card-title">Dragon Design</h5>
+                  <p class="card-text">Last editted on July 8, 2021</p>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                </div>
+            </div>
+            <div id="recent-design-card" class="card" style="width: 18rem;">
+                <img src="https://coloringhome.com/coloring/8cG/oKr/8cGoKr9Xi.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                  <h5 class="card-title">Dragon Design</h5>
+                  <p class="card-text">Last editted on July 8, 2021</p>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                </div>
+            </div>
+            <div id="recent-design-card" class="card" style="width: 18rem;">
+                <img src="https://coloringhome.com/coloring/8cG/oKr/8cGoKr9Xi.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                  <h5 class="card-title">Dragon Design</h5>
+                  <p class="card-text">Last editted on July 8, 2021</p>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                </div>
+            </div>
+            <div id="recent-design-card" class="card" style="width: 18rem;">
+                <img src="https://coloringhome.com/coloring/8cG/oKr/8cGoKr9Xi.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    
+                  <h5 class="card-title">Dragon Design</h5>
+                  <p class="card-text">Last editted on July 8, 2021</p>
+                  <a href="#" class="btn btn-primary">Edit</a>
+                </div>
+            </div>
+        
+            
+        </div>
+
+    </div>
 </body>
 </html>

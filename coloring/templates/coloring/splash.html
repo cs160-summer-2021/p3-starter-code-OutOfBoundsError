@@ -4,12 +4,25 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv = "refresh" content = "2; url = http://localhost:8000/coloring/home">
   	<title>P3 Coloring</title>
-    <link rel="stylesheet" href="../../static/coloring/main.css"/>
+	<link rel="stylesheet" href="../../static/coloring/main.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
 </head>
 <body>
-    Splash page
+	<img src="https://cdn.iconscout.com/icon/free/png-512/google-cloud-2038785-1721675.png" alt="Girl in a jacket" style="height:350px; width:350px; display: block; margin-left: auto; margin-right: auto; margin-top: 100px">
+	<p style="text-align:center; font-size:70px; font-family: Titillium Web; margin-top: 20px">
+		Loading ...
+	</p>
+	<div style="margin-left:20%">
+		<progress id="file" value="32" max="100" style="width:75%; height: 40px;"> 
+			32%
+		</progress>
+	</div>
+	
 </body>
 </html>

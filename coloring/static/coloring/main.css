@@ -1,5 +1,87 @@
 body {
     background-color: #1E1E2C;
     color: white;
-    
+
+}
+
+#welcome-header {
+    top: 0;
+    left: 0;
+    font-size: 28px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+#menu-buttons-wrapper {
+    height: 30vh;
+    background-color: red;
+    text-align: center;
+    padding: 25px;
+}
+
+#main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-menu-btn {
+    display: block;
+    height: 100px;
+    width: 200px;
+    background-color: #353543;
+    margin: 0 auto;
+    margin-top: 1em;
+    line-height: 100px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6); 
+    box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6);
+}
+
+#recent-designs-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;   
+    padding-left: 60px;
+    padding-right: 20px;
+
+}
+
+#recent-design-card {
+    display: inline-block;
+    width: 275px;
+    height: 325px;
+    margin-left: 1em;
+}
+
+.card-body {
+    background-color: #2A2C3E;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#section-header {
+    font-size: 28px;
+    margin-left: 1em;
+}
+
+#top-section {
+    padding: 10px;
+    background-color: yellow;
+}
+
+#design-search {
+    background-color: #272736;
+    border-color: transparent;
+    padding: 15px;
+    color: white;
+}
+
+#search-icon {
+    background-color: #272736;
+    border-color: transparent;
 }
