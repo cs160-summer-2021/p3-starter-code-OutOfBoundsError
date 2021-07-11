@@ -69,9 +69,10 @@ body {
     margin-left: 1em;
 }
 
-#top-section {
+.top-section {
     padding: 10px;
-    background-color: yellow;
+    height: 50px;
+    width: 100%;
 }
 
 #design-search {
@@ -79,9 +80,164 @@ body {
     border-color: transparent;
     padding: 15px;
     color: white;
+    height: 60px;
 }
 
 #search-icon {
     background-color: #272736;
     border-color: transparent;
+    font-size: 40px;
+    padding: 10px;
+    height: 60px;
+}
+
+#search-field {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#left-section {
+    width: 30vw;
+    height: 100vh;
+    background-color: #0B0B0C;
+    float: left;
+    padding: 15px;
+    top: 0;
+    text-align: center;
+}
+
+#right-section {
+    height: 100vh;
+    left: 30%;
+    width: 70%;
+    display: inline-block;
+    padding: 15px;
+    
+}
+
+#my-design-search-field {
+    width: 25vw;
+    margin: 0 auto;
+}
+
+#my-search-icon {
+    font-size: 40px;
+    background-color: #272736;
+    border-radius: 5px;
+    height: 55px;
+    line-height: 55px;
+}
+
+#my-design-search {
+    background-color: #272736;
+    width: 75px;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+
+.my-design {
+    height: 50px;
+    width: 100%;
+    background-color: #2A2C3E;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 25px;
+    margin-top: 1em;
+}
+
+.my-design:hover {
+    background-color: #A6AFFA;
+}
+
+.design-display {
+    height: 70vh;
+    width: 40vw;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#display-image {
+    display: block;
+    margin: 0 auto;
+    height: 30vh;
+}
+
+.design-description {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+#design-title {
+    font-size: 28px;
+    float: left;
+}
+
+#design-date {
+    font-size: 18px;
+    color: #c4c4c4;
+    float: right;
+    padding-top: 10px;;
+}
+
+.design-control-btn {
+    height: 75px;
+    width: 13vw;
+}
+
+#edit-btn {
+    background-color: #8D8DD8;
+    border-color: transparent;
+
+}
+
+#share-btn {
+    background-color: #8EBC69;
+    border-color: transparent;
+
+}
+
+#delete-btn {
+    background-color: #CD3434;
+    border-color: transparent;
+}
+
+#modal-container {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+}
+
+#modal {
+    width: 40vw;
+    background-color: white;
+    margin: 0 auto;
+    opacity: 1;
+    border-radius: 15px;
+    color: black;
+    padding: 15px;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6); 
+    box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6);
+}
+
+#color-select-header {
+    font-size: 18px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+#close-btn {
+    height: 40px;
+    width: 80px;
+    margin-top: 2em;
 }

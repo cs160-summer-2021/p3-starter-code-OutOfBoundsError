@@ -20,4 +20,6 @@ def settings(request):
 def splash(request):
     return render(request, 'coloring/splash.html')
 
+def interactions(request):
+    return render(request, 'coloring/new_interaction.html')
 

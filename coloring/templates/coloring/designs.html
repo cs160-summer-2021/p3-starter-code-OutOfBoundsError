@@ -5,20 +5,56 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<title>P3 Coloring</title>
-      <link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
     <link rel="stylesheet" href="../../static/coloring/main.css"/>
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
 
 </head>
 <body>
-    <div class="top-section">
-        <!-- Back button goes here -->
-    </div>
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="search-icon">@</span>
+    <div style="float:left;">
+		<a href = "http://localhost:8000/coloring/home">
+			<img src="https://i.ibb.co/rvZJLkH/image-15.png" alt="Back Arrow" style="height:50px; width:50px; margin-top:23px;">
+		</a>
+	</div>
+    <br><br><br><br>
+    <div id="search-field" class="input-group mb-3">
+        <span class="material-icons material-icons-outlined" id="search-icon">
+            search
+        </span>
         <input type="text" id="design-search" class="form-control" placeholder="Designs, keywords, objects, animals, etc...">
     </div>
 
+    <br><br><br><br>
+	<div>
+		<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; margin-bottom: 8px;">
+			Recommended designs
+		</p>
+	</div>
+
+    <div>
+		<div>
+			<img src="https://coloringhome.com/coloring/RkT/MK8/RkTMK8bij.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 90px; margin-top: 25px; float: left">
+		</div>
+		<div>
+			<img src="https://coloringhome.com/coloring/RkT/MK8/RkTMK8bij.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 50px; margin-top: 25px; float: left">
+		</div>
+		<div>
+			<img src="https://coloringhome.com/coloring/RkT/MK8/RkTMK8bij.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 50px; margin-top: 25px; float: left">
+		</div>
+	</div>
+
+	<div>
+		<div>
+			<img src="https://first-school.ws/imagestn/cpl/animals/index/mammals-tiger.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 90px; margin-top: 25px; float: left">
+		</div>
+		<div>
+			<img src="https://first-school.ws/imagestn/cpl/animals/index/mammals-tiger.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 50px; margin-top: 25px; float: left">
+		</div>
+		<div>
+			<img src="https://first-school.ws/imagestn/cpl/animals/index/mammals-tiger.gif" style="height:300px; width:350px; border-radius: 20px; margin-left: 50px; margin-top: 25px; float: left">
+		</div>
+	</div>
 </body>
 </html>

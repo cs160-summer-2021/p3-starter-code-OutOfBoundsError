@@ -5,12 +5,118 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<title>P3 Coloring</title>
-    <link rel="stylesheet" href="../../static/coloring/main.css"/>
+	<link rel="stylesheet" href="../../static/coloring/main.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
 
 </head>
 <body>
-    Settings Page
+	<div style="float:left;">
+		<a href = "http://localhost:8000/coloring/home">
+			<img src="https://i.ibb.co/rvZJLkH/image-15.png" alt="Back Arrow" style="height:50px; width:50px; margin-top:23px;">
+		</a>
+	</div>
+	
+	<div>
+		<h1 style="font-family:Titillium Web; font-size:60px; float:left; margin-top: 0px; margin-left: 2%;">
+			Settings
+		</h1>
+	</div>
+
+	<br><br><br><br><br>
+
+	<div>
+		<p style="font-family:Titillium Web; font-size:50px; margin-left:3%; margin-bottom: 8px">
+			General
+		</p>
+		<div>
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Language:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 200px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				English
+			</div>
+		</div>
+		
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Text Size:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 200px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				Regular
+			</div>
+		</div>
+
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Timezone:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 400px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				Pacific Standard Time (UTC-07:00)
+			</div>
+		</div>
+
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Auto-refresh:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 500px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				Refreshes every 20 seconds (3 times per minute)
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div>
+		<p style="font-family:Titillium Web; font-size:50px; margin-left:3%; margin-bottom: 8px">
+			Privacy
+		</p>
+		<div>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 300px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px; margin-bottom: 15px">
+				CHANGE PASSWORD
+			</div>
+		</div>
+		
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Account ID:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 250px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				8948501432957
+			</div>
+		</div>
+
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				First Security Question:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 400px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				What is the middle name of my mom?
+			</div>
+		</div>
+
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Second Security Question:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 300px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				In what city was I born in?
+			</div>
+		</div>
+
+		<div style="clear:both;">
+			<p style="font-family:Titillium Web; font-size:30px; margin-left:3%; color:#C4C4C4; margin-top: 8px; margin-bottom: 10px; float:left">
+				Reset Key:
+			</p>
+			<div style="background-color: #464E5C; color: white; float: left; margin-left: 40px; height: 30px; width: 300px; margin-top: 15px; border-radius: 15px; text-align: center; font-family:Titillium Web; font-size: 18px">
+				&#35 8ab579pxm381yew
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>

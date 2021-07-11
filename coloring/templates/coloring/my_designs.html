@@ -5,12 +5,110 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   	<title>P3 Coloring</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'coloring/vendors/bootstrap/css/bootstrap.css' %}" />
     <link rel="stylesheet" href="../../static/coloring/main.css"/>
 	<script type="text/javascript" src="{% static 'coloring/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'coloring/vendors/paper/paper-full.min.js' %}"></script>
 
 </head>
 <body>
-    My Designs Page
+    <div id="left-section">
+        <div style="float:left;">
+            <a href = "http://localhost:8000/coloring/home">
+                <img src="https://i.ibb.co/rvZJLkH/image-15.png" alt="Back Arrow" style="height:30px; width:30px; margin-top:23px;">
+            </a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>My Designs</h1>
+        <br/>
+        <br/>
+        <div id="my-design-search-field" class="input-group mb-3">
+            <span class="material-icons material-icons-outlined" id="my-search-icon">
+                search
+            </span>
+            <input type="text" id="my-design-search" class="form-control" placeholder="design name">
+        </div>  
+        <div class="my-design">
+            Dragon design
+        </div>
+        <div class="my-design">
+            Untitled_Design
+        </div>
+        <div class="my-design">
+            Dragon_mockup
+        </div>
+        <div class="my-design">
+            Random dragon
+        </div>
+        <div class="my-design">
+            Mosaic horse
+        </div>
+        <div class="my-design" id="flowers">
+            Flowers
+        </div>
+        <div class="my-design">
+            Tiger design
+        </div>
+        <div class="my-design">
+            Untitled 3
+        </div>
+        <div class="my-design">
+            Untitled 1
+        </div>
+        <div class="my-design">
+            Turtle design
+        </div>
+
+    </div>
+    <div id="right-section">
+        <h1 id="section-header">Preview</h1>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="design-display">
+            <img id="display-image" src="https://www.homemade-gifts-made-easy.com/image-files/flower-coloring-pages-single-flower-in-pot-400x518.png.pagespeed.ce.3u67MMJKWt.png"/>
+        </div>
+        <br/>
+        <div class="design-description">
+            <h2 id="design-title">Flowers</h2>
+            <h2 id="design-date">Created on July 8, 2021</h2>
+            <br/>
+            <br/>
+            <div id="design-controls">
+                <a href="./interactions">
+                    <button id="edit-btn" type="button" class="btn btn-primary design-control-btn">Edit</button>
+                </a>
+                <a>
+                    <button id="delete-btn" type="button" class="btn btn-primary design-control-btn">Delete</button>
+                </a>
+                <a>
+                    <button id="share-btn"  type="button" class="btn btn-primary design-control-btn">Share</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var placeholder_link = "https://www.homemade-gifts-made-easy.com/image-files/flower-coloring-pages-single-flower-in-pot-400x518.png.pagespeed.ce.3u67MMJKWt.png";
+        var display = true;
+        $('#display-image').hide();
+        $('.design-description').hide();
+        $('#flowers').click(function() {
+            $('#flowers').css('background-color', '#A6AFFA' );
+            $('.design-display').css('height', '40vh');
+            $('#display-image').toggle(display);
+            $('.design-description').toggle(display);
+            if (display == false) {
+                $('.design-display').css('height', '70vh');
+                $('#flowers').css('background-color', '#2A2C3E' );
+            }
+        })
+        
+    </script>
+
 </body>
 </html>
