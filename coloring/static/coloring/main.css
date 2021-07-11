@@ -1,7 +1,15 @@
 body {
     background-color: #1E1E2C;
     color: white;
+    font-family:Titillium Web;
+}
 
+h1 {
+    font-family:Titillium Web;
+}
+
+h2 {
+    font-family:Titillium Web;
 }
 
 #welcome-header {
@@ -30,12 +38,12 @@ body {
 
 .main-menu-btn {
     display: block;
-    height: 100px;
+    height: 60px;
     width: 200px;
     background-color: #353543;
     margin: 0 auto;
     margin-top: 1em;
-    line-height: 100px;
+    line-height: 60px;
     text-decoration: none;
     color: white;
     border-radius: 5px;
