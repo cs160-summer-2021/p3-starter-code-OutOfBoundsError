@@ -261,3 +261,10 @@ h2 {
     color: #c4c4c4;
     font-family:Titillium Web;
 }
+
+#color-display {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 5px;
+}

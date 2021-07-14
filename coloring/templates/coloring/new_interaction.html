@@ -126,7 +126,9 @@
 					$swatch.click(function(){
 						// add color to the color palette history
 						cp.history.push($(this).css("background-color"));
+						$('#color-display').css('background-color', $(this).css("background-color"));
 					});
+					
 					cp.$container.append($swatch);
 				}
 			}
@@ -215,6 +217,9 @@
 	<div id="design-information">
 		<h1>Flower Design</h1>
 		<p id="last-saved-info">Last saved at 9:58 PM</p>
+		<div id="color-display">
+
+		</div>
 	</div>
 	
 	<div id="modal">
