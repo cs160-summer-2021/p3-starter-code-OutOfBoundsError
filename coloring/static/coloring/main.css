@@ -249,3 +249,15 @@ h2 {
     width: 80px;
     margin-top: 2em;
 }
+
+#design-information {
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 15px;
+}
+
+#last-saved-info {
+    color: #c4c4c4;
+    font-family:Titillium Web;
+}
