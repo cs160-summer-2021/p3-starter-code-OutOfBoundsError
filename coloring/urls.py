@@ -9,5 +9,6 @@ urlpatterns = [
     path('designs', views.designs, name='designs'), #localhost:3000/coloring/designs
     path('mydesigns', views.my_designs, name='my_designs'), #localhost:3000/coloring/mydesigns
     path('splash', views.splash, name="splash"),
-    path('interactions', views.interactions, name="interactions")
+    path('interactions', views.interactions, name="interactions"),
+    path('new', views.newdesign, name="new design")
 ]

@@ -23,3 +23,5 @@ def splash(request):
 def interactions(request):
     return render(request, 'coloring/new_interaction.html')
 
+def newdesign(request):
+    return render(request, 'coloring/newdesign.html')

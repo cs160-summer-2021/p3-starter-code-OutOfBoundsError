@@ -195,17 +195,7 @@
 			function init(custom) {
 				paper.setup(canvas);
 				getColorsCreatePalette();
-				paper.project.importSVG(mandala.filePath, function (item) {
-					mandala.item = item._children["design-freepik"];
-					paper.project.insertLayer(0, mandala.item);
-
-					if (custom) {
-						myCustomInteraction();
-					} else {
-						myGradientInteraction();
-					}
-
-				});
+				myCustomInteraction();
 			}
 			$('#color-modal').hide();
 			$('#pen-modal').hide();
@@ -252,66 +242,65 @@
 				style="width: 50px; height: 50px; margin-left: 10px">
 		</div>
 		<div class="list">
-			<a href="http://localhost:8000/coloring/home" style="text-decoration: none;"">
-				<span class="material-icons material-icons-outlined" id="sidebar-icon">
-					home
-				</span>
+			<a href="http://localhost:8000/coloring/home">
+				<img src="https://i.ibb.co/BBDpssK/image-10.png"
+					style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 			</a>
 			<a id="color-btn">
-				<span class="material-icons material-icons-outlined" id="sidebar-icon">
-					format_paint
-				</span>
+				<img src="https://i.ibb.co/tZBnjDX/image-1.png"
+					style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 			</a>
 			<a id="pen-btn">
-				<span class="material-icons material-icons-outlined" id="sidebar-icon">
-					edit
-				</span>
+				<img src="https://i.ibb.co/6nrTBKs/image-2.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 			</a>
-		
 			
-			<span class="material-icons material-icons-outlined" id="disabled-sidebar-icon">
-				touch_app
-				</span>
+
+			<a href = "https://www.color-hex.com/">
+				<img src="https://i.ibb.co/SNjywwb/image-3.png" style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
+			</a>
+			
+			<img src="https://i.ibb.co/PW5BHx8/image-4.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 			<a id="eraser-btn">
-				<span class="material-icons material-icons-outlined" id="sidebar-icon">
-					auto_fix_high
-				</span>
+				<img src="https://i.ibb.co/h2pp8TF/image-5.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 			</a>
 			
 
-			<a href="https://unsplash.com/" style="text-decoration: none;">
-				<span class="material-icons material-icons-outlined" id="sidebar-icon">
-					lightbulb
-				</span>
+			<a href="https://unsplash.com/">
+				<img src="https://i.ibb.co/hZdyysH/image-7.png"
+					style="width: 60px; height: 60px; margin-left: 10px; margin-top: 30px">
 			</a>
 
 
-			<span class="material-icons material-icons-outlined" id="disabled-sidebar-icon">
-				help_outline
-				</span>
-			<span class="material-icons material-icons-outlined" id="disabled-sidebar-icon">
-				star_outline
-				</span>
-			<span class="material-icons material-icons-outlined" id="disabled-sidebar-icon">
-				zoom_in
-				</span>
+			<img src="https://i.ibb.co/2F9YRnZ/image-8.png"
+				style="width: 60px; height: 60px; margin-left: 10px; margin-top: 20px">
+			<img src="https://i.ibb.co/mtYvt9c/image-9.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 20px">
+			<img src="https://i.ibb.co/NCFj9xB/image-12.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 25px">
 
 
 			<div class="image-upload">
 				<label for="file-input">
-					<span class="material-icons material-icons-outlined" id="sidebar-icon">
-						upload_file
-					</span>
+					<img src="https://i.ibb.co/2hTL6gC/image-13.png" style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 				</label>
 				<input id="file-input" type="file"/>
 			</div>
+
+			
+
+
+			<img src="https://i.ibb.co/xz77zkb/image-14.png"
+				style="width: 50px; height: 50px; margin-left: 15px; margin-top: 30px">
 		</div>
 	</div>
 
 	<canvas id="myCanvas" width="750px" height="750px"></canvas>
 
 	<div id="design-information">
-		<h1>Flower Design</h1>
+		<h1>New Design</h1>
 		<p id="last-saved-info">Last saved at 9:58 PM</p>
 		<div id="color-display">
 		</div>

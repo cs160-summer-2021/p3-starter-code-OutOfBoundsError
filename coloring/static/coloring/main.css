@@ -155,6 +155,17 @@ h2 {
     margin-top: 1em;
 }
 
+.my-design-disabled {
+    height: 50px;
+    width: 100%;
+    background-color: #1d1e25;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 25px;
+    margin-top: 1em;
+}
+
 .my-design:hover {
     background-color: #A6AFFA;
 }
@@ -224,19 +235,31 @@ h2 {
 
 #modal-wrapper {
     position: fixed;
-    top: 30%;
+    top: 17%;
     width: 100%;
+    z-index: -1;
 }
 
-#modal {
-    width: 23vw;
+
+#pen-modal-wrapper {
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    z-index: -1;
+}
+
+#color-modal {
+    width: 20vw;
     background-color: white;
-    margin: 0 auto;
     opacity: 1;
-    border-radius: 15px;
+    border-radius: 5px 0px 0px 5px;
     color: black;
-    padding: 15px;
+    padding: 10px;
     display: block;
+    position: fixed;    
+    top: 15%;
+    right: 0;
+    float: right;
     -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6); 
     box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6);
 }
@@ -271,4 +294,75 @@ h2 {
     width: 30px;
     background-color: black;
     border-radius: 25px;
+    display: inline-block;
+}
+
+#switch {
+    float: right;
+}
+
+#pen-modal {
+    width: 20vw;
+    background-color: white;
+    opacity: 1;
+    border-radius: 5px 0px 0px 5px;
+    color: black;
+    padding: 15px;
+    display: block;
+    float: right;
+    position: fixed;    
+    top: 38%;
+    right: 0;
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6); 
+    box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.6);
+    
+}
+
+#tool-display {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+#stroke-display {
+    width: 100%;
+    height: 1px;
+    margin-top: 1em;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+#stroke-slider {
+    display: inline-block;
+    width: 100%;
+}
+
+#stroke-value {
+    background-color: transparent;
+    border: none;
+}
+
+#setting-name {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#sidebar-icon {
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    font-size: 50px;
+    margin-left: 15px;
+    display: block;
+}
+
+#disabled-sidebar-icon {
+    color: #A2A2A2;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    font-size: 50px;
+    margin-left: 15px;
+    display: block;
 }
